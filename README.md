@@ -50,5 +50,44 @@ Project is created with:
   * lookup - O(n)
   * insert - O(n)
   * delete - O(n)
-  
+
+* ### Stack
+  a data structure that is LIFO (Last In First Out).
+  Elements are stored vertically and you can only access the last element.
+  In order to access the other elements, you must start popping the element at the top.
+
+  Stack can be implemented using linked list and array.
+
+  #### Time complexity of Linked List
+  * lookup - O(n)
+  * pop - O(1)
+  * push - O(1)
+  * peek - O(1)
+
+* ### Queue
+  a data structure that is FIFO (First In First Out).
+  You can only access the first element in this data structure.
+  In order to access the other elements, you must pop the first element.
+
+  DO NOT implement queue using array, because if you remove the first element at the array,
+  all elements will be shifted in very inefficient way O(n).
+
+  #### Time complexity of Linked List
+  * lookup - O(n)
+  * dequeue - O(1) - remove the first element
+  * enqueue - O(1) - add a new element at the end
+  * peek - O(1)
+
+  ### Main difference between Stacks and Queues
+  Stacks - Last In First Out (LIFO)
+
+  Queues - First In First Out (FIFO)
+
+  ### PROS of Stacks and Queues
+  * Fast Operations
+  * Fast Peek
+  * Ordered
+
+  ### CONS of Stacks and Queues
+  * Slow lookup
   
