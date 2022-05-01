@@ -28,7 +28,7 @@ function sort(arr) {
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
 function heapify(arr, n, i) {
-  const largest = i; // Initialize largest as root
+  let largest = i; // Initialize largest as root
   const l = 2 * i + 1; // left = 2*i + 1
   const r = 2 * i + 2; // right = 2*i + 2
 
@@ -40,9 +40,9 @@ function heapify(arr, n, i) {
 
   // If largest is not root
   if (largest != i) {
-    const swap = arrCopy[i];
-    arrCopy[i] = arrCopy[largest];
-    arrCopy[largest] = swap;
+    const swap = arr[i];
+    arr[i] = arr[largest];
+    arr[largest] = swap;
 
     // Recursively heapify the affected sub-tree
     heapify(arr, n, largest);
@@ -59,7 +59,7 @@ function printArray(arr) {
   console.log(log);
 }
 
-const arr = [7, 2, 4];
+const arr = ['apple', 'papaya', 'banana', 'pearl'];
 const sortedArr = sort(arr);
 
 printArray(sortedArr);

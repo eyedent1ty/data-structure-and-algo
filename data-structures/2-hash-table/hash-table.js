@@ -60,18 +60,9 @@ class HashTable {
     return this.valuesArray;
   }
 
- 
-
 }
 
-const myHashTable = new HashTable(50);
-myHashTable.set('grapes', 10000);
-myHashTable.set('apples', 54);
-
-myHashTable
-  .values()
-  .forEach(key => console.log(key));
-
+module.exports = HashTable;
 
 // Conclusion:
 // Hash Table data structure uses array as format of the data [[[key, value], [key, value]], [key, value], [key, value]]]
